@@ -9214,6 +9214,8 @@ drill 1.2 mm</description>
 <part name="SP1" library="buzzer" deviceset="AL11P" device=""/>
 <part name="LSP1" library="solpad" deviceset="MCS08" device=""/>
 <part name="LSP2" library="solpad" deviceset="MCS08" device=""/>
+<part name="LSP3" library="solpad" deviceset="MCS08" device=""/>
+<part name="LSP4" library="solpad" deviceset="MCS08" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9226,10 +9228,12 @@ drill 1.2 mm</description>
 <instance part="GND1" gate="1" x="33.02" y="27.94"/>
 <instance part="C1" gate="G$1" x="60.96" y="43.18"/>
 <instance part="R3" gate="G$1" x="60.96" y="55.88" rot="R90"/>
-<instance part="P+1" gate="VCC" x="30.48" y="78.74"/>
+<instance part="P+1" gate="VCC" x="22.86" y="58.42"/>
 <instance part="SP1" gate="G$1" x="60.96" y="71.12"/>
-<instance part="LSP1" gate="G$1" x="27.94" y="71.12" rot="R90"/>
+<instance part="LSP1" gate="G$1" x="25.4" y="71.12" rot="R90"/>
 <instance part="LSP2" gate="G$1" x="76.2" y="27.94" rot="R180"/>
+<instance part="LSP3" gate="G$1" x="25.4" y="66.04" rot="R90"/>
+<instance part="LSP4" gate="G$1" x="22.86" y="48.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9283,7 +9287,14 @@ drill 1.2 mm</description>
 <junction x="76.2" y="30.48"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="N$3" class="0">
+<segment>
+<pinref part="SP1" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="71.12" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="R"/>
 <wire x1="33.02" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
@@ -9294,18 +9305,19 @@ drill 1.2 mm</description>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="66.04" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="30.48" y1="66.04" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="LSP1" gate="G$1" pin="MP"/>
-<wire x1="30.48" y1="71.12" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-<junction x="30.48" y="71.12"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VCC" class="0">
 <segment>
-<pinref part="SP1" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="71.12" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="LSP3" gate="G$1" pin="MP"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="50.8" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="LSP4" gate="G$1" pin="MP"/>
+<junction x="22.86" y="50.8"/>
 </segment>
 </net>
 </nets>
