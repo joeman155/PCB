@@ -10232,12 +10232,12 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </classes>
 <parts>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="adafruit" deviceset="CPOL-US" device="TT2D6"/>
-<part name="D1" library="diode" deviceset="1N5908" device=""/>
-<part name="L1" library="resistor" deviceset="L-US" device="TJ3-U1"/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="0204/7"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="0204/7"/>
-<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT5D10"/>
+<part name="C1" library="adafruit" deviceset="CPOL-US" device="TT2D6" value="100uF (16V)"/>
+<part name="D1" library="diode" deviceset="1N5908" device="" value="1N5822"/>
+<part name="L1" library="resistor" deviceset="L-US" device="TJ3-U1" value="100uH (3amp)"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="0204/7" value="1.5k"/>
+<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT5D10" value="330uF (16V)"/>
 <part name="J1" library="con-molex" deviceset="22-?-02" device="27-2021"/>
 <part name="J2" library="con-molex" deviceset="22-?-02" device="27-2021"/>
 <part name="IC1" library="LM2576" deviceset="LM2576*" device="T-5.0"/>
@@ -10248,7 +10248,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="35.56" y="27.94"/>
-<instance part="C1" gate="G$1" x="20.32" y="48.26"/>
+<instance part="C1" gate="G$1" x="17.78" y="48.26"/>
 <instance part="D1" gate="1" x="53.34" y="48.26" rot="R90"/>
 <instance part="L1" gate="G$1" x="60.96" y="58.42" rot="R270"/>
 <instance part="R1" gate="G$1" x="81.28" y="53.34" rot="R90"/>
@@ -10267,8 +10267,8 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <segment>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="35.56" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="73.66" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
@@ -10284,11 +10284,11 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="73.66" y1="40.64" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="43.18" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="ON/OFF"/>
-<wire x1="25.4" y1="43.18" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="43.18" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 <junction x="35.56" y="43.18"/>
 </segment>
@@ -10296,12 +10296,12 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="J1" gate="-2" pin="S"/>
-<wire x1="20.32" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="60.96" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="60.96" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="20.32" y1="50.8" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="50.8" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="+V"/>
-<wire x1="22.86" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">

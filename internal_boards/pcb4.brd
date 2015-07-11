@@ -1599,10 +1599,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="diode" package="C4111-15" value="1N5908" x="49.53" y="48.26"/>
-<element name="L1" library="resistor" package="TJ3-U1" value="" x="50.8" y="41.91" rot="R90"/>
-<element name="R1" library="adafruit" package="0204/7" value="" x="59.69" y="63.5"/>
-<element name="R2" library="adafruit" package="0204/7" value="" x="52.07" y="62.23"/>
+<element name="D1" library="diode" package="C4111-15" value="1N5822" x="49.53" y="48.26"/>
+<element name="L1" library="resistor" package="TJ3-U1" value="100uH (3amp)" x="50.8" y="41.91" rot="R90"/>
+<element name="R1" library="adafruit" package="0204/7" value="4.7k" x="59.69" y="63.5"/>
+<element name="R2" library="adafruit" package="0204/7" value="1.5k" x="52.07" y="62.23"/>
 <element name="J1" library="con-molex" package="6410-02" value="22-27-2021-02" x="41.91" y="60.96" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="48.26" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="48.26" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1615,8 +1615,8 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="15.24" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="15.24" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C2" library="adafruit" package="TT5D10" value="" x="63.5" y="56.75715" rot="R180"/>
-<element name="C1" library="adafruit" package="TT2D6" value="" x="39.71484375" y="54.61" rot="R180"/>
+<element name="C2" library="adafruit" package="TT5D10" value="330uF (16V)" x="63.5" y="56.75715" rot="R180"/>
+<element name="C1" library="adafruit" package="TT2D6" value="100uF (16V)" x="39.71484375" y="54.61" rot="R180"/>
 <element name="IC1" library="LM2576" package="TO220-5" value="LM2576T-5.0" x="50.8" y="59.69"/>
 </elements>
 <signals>
